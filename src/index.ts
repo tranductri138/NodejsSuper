@@ -25,7 +25,7 @@ app.post("/banhbao" , async(req, res)=> {
     return res.status(200).json(await newBanhBao.save())  ;
   } catch (error) {
     console.log(error);
-    return res.status(500).json("loi~ roi`")
+    return res.status(500).json("loi~ roi1`")
   }
 });
 
