@@ -1,7 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import { BanhBao }  from './model/people.schema'
-import * as dotenv from 'dotenv'
+import * as dotenv from 'dotenv';
 const bodyParser = require('body-parser')
 
 dotenv.config();
@@ -10,12 +10,6 @@ app.use(bodyParser.json())
 
 
 app.get('/' , (req, res) => {
-  res.sendFile(__dirname +'/login/index.html');
-});
-app.get('/a' , (req, res) => {
-  res.sendFile(__dirname +'/login/abc.html');
-});
-app.get("/tris" ,  (req , res) =>{
  res.send("<H2> Tris dep zai <H2>")
 });
 
